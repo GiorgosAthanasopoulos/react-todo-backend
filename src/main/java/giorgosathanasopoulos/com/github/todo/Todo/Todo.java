@@ -28,6 +28,7 @@ public class Todo {
     LocalDate dateCreated = LocalDate.now();
     @NonNull
     @Setter
+    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
     LocalDate deadline;
 
     @Override

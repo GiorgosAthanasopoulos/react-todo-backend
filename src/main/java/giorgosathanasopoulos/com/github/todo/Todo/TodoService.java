@@ -63,5 +63,7 @@ public class TodoService {
         if(deadline != todo.getDeadline()) {
             todo.setDeadline(deadline);
         }
+
+        todoRepository.save(todo);
     }
 }
